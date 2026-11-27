@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+  개발자 웹사이트 루트 (2026-11-27) — Play 「개발자 웹사이트」, App Store 마케팅 URL = https://almondnoodlesoup.github.io/
+  배포 = GitHub Pages almondnoodlesoup/almondnoodlesoup.github.io 저장소 루트 (app-ads.txt, dreamseller-version.json 옆)
+  ⛔ 루트의 app-ads.txt는 지우거나 옮기지 말 것 (AdMob 인증). 이 페이지는 사람이 보는 안내용
+  ＊almondnoodlesoup.com(Astro로 제작 중)이 생기면 그때 이 페이지와 스토어 웹사이트 칸을 다시 정한다
+-->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jiyun Han</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1b1b1f;
+    --muted: #5d5d68;
+    --line: #e2e2e8;
+    --accent: #4a4ae0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17171b;
+      --fg: #e8e8ee;
+      --muted: #a0a0ad;
+      --line: #32323a;
+      --accent: #9a9aff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 16px 96px;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", "Malgun Gothic", sans-serif;
+    line-height: 1.75;
+    font-size: 16px;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 26px; line-height: 1.4; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 32px; }
+  a { color: var(--accent); }
+  .game {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .game img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+  .game h2 { font-size: 20px; margin: 0 0 2px; }
+  .game .sub { color: var(--muted); margin: 0 0 14px; }
+  .links { display: grid; grid-template-columns: auto auto; gap: 4px 28px; justify-content: start; margin: 0; padding: 0; list-style: none; }
+  footer { margin-top: 32px; color: var(--muted); font-size: 14px; }
+  footer p { margin: 4px 0; }
+  @media (max-width: 480px) {
+    .game { flex-direction: column; }
+    .links { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>Jiyun Han</h1>
+<p class="meta">좋아하는 게임을 만들고 있습니다.<br>Indie game developer</p>
+
+<section class="game">
+  <img src="dreamseller-icon.png" alt="Dream Seller">
+  <div>
+    <h2>Dream Seller</h2>
+    <p class="sub">꿈을 만들어 파는 100일<br>A dream shop, 100 days to go</p>
+    <ul class="links">
+      <li><a href="https://almondnoodlesoup.github.io/dreamseller-privacy/support.html">고객 지원</a></li>
+      <li><a href="https://almondnoodlesoup.github.io/dreamseller-privacy/support-en.html">Support</a></li>
+      <li><a href="https://almondnoodlesoup.github.io/dreamseller-privacy/privacy.html">개인정보처리방침</a></li>
+      <li><a href="https://almondnoodlesoup.github.io/dreamseller-privacy/privacy-en.html">Privacy Policy</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>문의 / Contact: almondnoodlesoup@gmail.com</p>
+  <p>&copy; 2026 Exit404</p>
+</footer>
+</main>
+</body>
+</html>
